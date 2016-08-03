@@ -1,0 +1,18 @@
+.section-box{
+  background-color: white;
+  border: 1px solid #EAEAEA;
+  margin-bottom: $base-spacing-unit;
+  &__image-container{
+    height: 99px;
+    border-radius: $border-radius-base $border-radius-base 0 0;
+    overflow: hidden;
+  }
+  &__body{
+    padding: $base-spacing-unit;
+  }
+  &--main{
+    .section-box__image-container{
+      height: 238px
+    }
+  }
+}

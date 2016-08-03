@@ -1,10 +1,37 @@
 .main-navigation{
-	font-family: $font-family-sans-serif;
+	@include rem(12);
+  padding-top: 30px;
 	&__item{
-		&.is-active a{
-			background-color: $gray-light;
-			background-color: rgba($gray-light, 0.12);
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #9A9BA0;
+    display: block;
+    padding: em(15) em(15) em(15) em(40);
+    transition: all 0.2s ease-out;
+    position: relative;
+    backface-visibility: hidden;
+    transform: translateZ(0);
+		&.is-active,
+    &:hover{
+      color: white;
+      border-left: 4px solid #7C9C3E;
+      &:before{
+        transform: scaleX(1);
+      }
 		}
+    &:before{
+      background-color: #30353E;
+      content: "";
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 100%;
+      transform: scaleX(0);
+      transform-origin: 0 50%;
+      transition: transform 0.3s ease-out;
+      z-index: -1;
+    }
 	}
-	&--index{}
 }

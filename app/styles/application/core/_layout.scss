@@ -7,3 +7,37 @@
   	padding: 0 $base-spacing-unit;
   }
 }
+
+.l{
+  &-main{
+    width: 100%;
+    margin: 0 auto;
+    display: table;
+    table-layout: fixed;
+    height: 100%;
+    padding: 0 10px;
+  }
+  &-side,
+  &-content{
+    display: table-cell;
+    vertical-align: top;
+  }
+  &-side{
+    width: 260px;
+    background-color: #454B57;
+  }
+  &-content{
+    padding-top: 40px;
+  }
+}
+
+@media screen and (min-width: 1140px) {
+    .l{
+      &-main{
+        width: 1140px;
+      }
+      &-content{
+        padding-left: 40px;
+      }
+    }
+}
