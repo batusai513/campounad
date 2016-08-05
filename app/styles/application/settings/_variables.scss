@@ -19,7 +19,7 @@ $font-family-serif:                 Cambria, Times New Roman, Times, serif !defa
 $font-family-base:                  $font-family-sans-serif;
 $font-family-icons:                "icon-family";
 
-$golden-ratio:                      1.4;
+$golden-ratio:                      1.6;
 
 $font-size-base:                    14px;
 $em-base:                           $font-size-base;
@@ -29,12 +29,12 @@ $font-size-large:                   floor($font-size-base * 1.1); //16px
 $font-size-small:                   floor($font-size-base * 0.875); //14px
 $font-size-smaller:                 ceil($font-size-base * 0.75); //10px
 
-$font-size-h1:                      floor($font-size-base * 2.0); //36px
-$font-size-h2:                      ceil($font-size-base * 1.875); //30px
-$font-size-h3:                      ceil($font-size-base * 1.8); //28px
-$font-size-h4:                      ceil($font-size-base * 1.5); //18px
-$font-size-h5:                      ceil($font-size-base * 1.1); //14px
-$font-size-h6:                      ceil($font-size-base * 0.95); //12px
+$font-size-h1:                      ceil($font-size-base * 1.71); //24px
+$font-size-h2:                      ceil($font-size-base * 1.42); //20px
+$font-size-h3:                      ceil($font-size-base * 1.28); //18px
+$font-size-h4:                      ceil($font-size-base * 1.14); //16px
+$font-size-h5:                      ceil($font-size-base * 1); //14px
+$font-size-h6:                      ceil($font-size-base * 0.85); //12px
 
 $line-height-base:                  $golden-ratio;
 $line-height-computed:              floor($font-size-base * $line-height-base);
@@ -43,7 +43,7 @@ $base-spacing-unit:                 $line-height-computed;
 $half-spacing-unit:                 $line-height-computed / 2;
 
 $headings-font-family:              $font-family-sans-serif;
-$headings-font-weight:              300;
+$headings-font-weight:              700;
 $headings-line-height:              1.1;
 $headings-color:                    inherit;
 
@@ -96,19 +96,19 @@ $btn-danger-color:               	#fff;
 $btn-danger-bg:                  	$brand-danger;
 $btn-danger-border:              	darken($btn-danger-bg, 5%);
 
-$btn-border-radius:        	 	 	4px;
+$btn-border-radius:        	 	 	  4px;
 $btn-link-disabled-color:        	$gray-light;
 
 
 //== Forms
 $input-bg:                       	#fff;
 $input-bg-disabled:              	$gray-lighter;
-$input-color:                    	#9B9B9B;
+$input-color:                    	#4A4A4A;
 $input-border-width:             	1px;
 $input-border:                   	#EAEAEA;
 $input-border-radius:            	0;
 $input-border-focus:             	#66afe9;
-$input-color-placeholder:        	#cccccc;
+$input-color-placeholder:        	#4A4A4A;
 $input-height-base:              	($line-height-computed + ($padding-base-vertical * 2)) + ($button-border-width * 2);
 $input-height-large:             	(floor($font-size-base * $line-height-base) + ($padding-large-vertical * 2));
 $input-height-small:             	(floor($font-size-small * $line-height-small) + ($padding-small-vertical * 2));

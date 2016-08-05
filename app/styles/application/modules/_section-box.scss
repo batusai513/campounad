@@ -2,13 +2,20 @@
   background-color: white;
   border: 1px solid #EAEAEA;
   margin-bottom: $base-spacing-unit;
+  border-radius: $border-radius-base;
   &__image-container{
     height: 99px;
     border-radius: $border-radius-base $border-radius-base 0 0;
     overflow: hidden;
+    img{
+      width: 100%;
+    }
   }
   &__body{
     padding: $base-spacing-unit;
+  }
+  &__title{
+    margin-top: 0;
   }
   &--main{
     .section-box__image-container{

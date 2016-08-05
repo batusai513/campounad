@@ -7,6 +7,12 @@ $panel-background-color-default:         #fff !default;
     .panel__body{
       background-color: $bg-color;
     }
+    .panel__head{
+      border-bottom-color: $border;
+    }
+    .panel__footer{
+      border-top-color: $border;
+    }
   }@else {
     .panel__head{
       background: $bg-color;
@@ -42,28 +48,9 @@ $panel-background-color-default:         #fff !default;
   }
 }
 
-.panel--small-space{
-  @include panel-size($padding-small-vertical, $padding-small-horizontal);
-}
-
-.panel--full-space{
-  @include panel-size($padding-large-vertical, $padding-large-horizontal);
-}
-
 .panel__head,
 .panel__footer{
   padding: $padding-large-vertical $padding-large-horizontal;
-}
-
-.panel__head--small,
-.panel__footer--small{
-  padding: $padding-small-vertical $padding-small-horizontal;
-}
-
-.panel__head--large,
-.panel__footer--large{
-  padding-top: $padding-large-horizontal;
-  padding-bottom: $padding-large-horizontal;
 }
 
 .panel__footer{
@@ -87,6 +74,30 @@ $panel-background-color-default:         #fff !default;
   }
 }
 
+//mover los sizes debajo de la definicion de head body y footer
+.panel--small-space{
+  @include panel-size($padding-small-vertical, $padding-small-horizontal);
+}
+
+.panel--full-space{
+  @include panel-size($padding-large-vertical * 2, $padding-large-horizontal * 2);
+}
+
+.panel__head--small,
+.panel__footer--small{
+  padding: $padding-small-vertical $padding-small-horizontal;
+}
+
+.panel__head--large,
+.panel__footer--large{
+  padding-top: $padding-large-horizontal;
+  padding-bottom: $padding-large-horizontal;
+}
+
+.panel__body--large{
+  padding: $padding-large-horizontal * 2;
+}
+
 .panel__body + .panel__body{
   border-top: 1px solid $brand-ui;
 }
@@ -101,25 +112,7 @@ $panel-background-color-default:         #fff !default;
   }
 }
 
-.panel--full-space{
-  .panel__head,
-  .panel__footer{
-    padding: $padding-large-vertical $padding-large-horizontal;
-  }
-  .panel__body{
-    padding: $padding-large-horizontal;
-  }
-}
-
-.panel--small-space{
-  .panel__head,
-  .panel__footer{
-    padding: $padding-small-vertical $padding-small-horizontal;
-  }
-  .panel__body{
-    padding: $padding-small-horizontal;
-  }
-}
+//remover las definiciones que no usan mixin de full size y small size
 
 .panel--bordered{
   border-width: 4px;
@@ -133,12 +126,12 @@ $panel-background-color-default:         #fff !default;
 
 .panel--small{
   @extend .panel--center;
-  max-width: 320px;
+  max-width: 400px;
 }
 
 .panel--medium{
   @extend .panel--center;
-  max-width: 700px;
+  max-width: 580px;
 }
 
 .panel--large{

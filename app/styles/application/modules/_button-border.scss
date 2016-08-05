@@ -5,13 +5,12 @@
   background-color: transparent;
 }
 
-.button-border--black{
-  border-color: black;
-  color: black;
+.button-border--brand{
+  color: $color-brand;
   &:hover,
   &:active,
   &:focus{
     color: white;
-    background-color: black;
+    background-color: $color-brand;
   }
 }
