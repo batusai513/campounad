@@ -4,7 +4,7 @@
   margin-bottom: $base-spacing-unit;
   border-radius: $border-radius-base;
   &__image-container{
-    height: 99px;
+    max-height: 99px;
     border-radius: $border-radius-base $border-radius-base 0 0;
     overflow: hidden;
     img{
@@ -19,7 +19,7 @@
   }
   &--main{
     .section-box__image-container{
-      height: 238px
+      max-height: 238px
     }
   }
 }

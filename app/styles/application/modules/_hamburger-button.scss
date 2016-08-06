@@ -4,7 +4,7 @@ $separation-ratio: floor($block-size / 20);
 $separation: (($line-height * 2) + $separation-ratio) * 1px;
 
 .hamburger-menu{
-  background-color: #87BEBF;
+  background-color: #454B57;
   position: relative;
   margin: 0;
   padding: 0;
@@ -14,8 +14,9 @@ $separation: (($line-height * 2) + $separation-ratio) * 1px;
   overflow: hidden;
   text-indent: 100%;
   white-space: nowrap;
+  cursor: pointer;
   -webkit-appearance: none;
-  transition: background 0.3s;
+  transition: all 0.2s ease-out;
 }
 
 .hamburger-menu__line{
@@ -45,7 +46,7 @@ $separation: (($line-height * 2) + $separation-ratio) * 1px;
 }
 
 .hamburger-xclose{
-  background-color: #87BEBF;
+  background-color: #454B57;
   .hamburger-menu__line{
     transition: background 0s 0.3s;
     &:before,
@@ -60,8 +61,8 @@ $separation: (($line-height * 2) + $separation-ratio) * 1px;
       transition-property: bottom, transform;
     }
   }
-  &.active{
-    background-color: darken(#87BEBF, 5%);
+  &.is-active{
+    background-color: darken(#454B57, 5%);
     .hamburger-menu__line{
       background: none;
       &:before{
@@ -76,6 +77,23 @@ $separation: (($line-height * 2) + $separation-ratio) * 1px;
       &:after{
         transition-delay: 0s, 0.3s;
       }
+    }
+  }
+}
+
+.l-button{
+  position: absolute;
+  left: 0;
+  top: 0;
+  transition: all 0.2s ease-out;
+  @media screen and (min-width: 950px) {
+    display: none;
+  }
+  &.is-active{
+    left: 260px;
+    display: block;
+    @media screen and (min-width: 950px) {
+      display: none;
     }
   }
 }

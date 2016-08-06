@@ -79,7 +79,7 @@
   }
 }
 .button--large {
-  @include button-size($padding-large-vertical, $padding-large-horizontal, $font-size-base, $line-height-large, $btn-border-radius);
+  @include button-size($padding-large-vertical, $padding-large-horizontal, $font-size-small, $line-height-large, $btn-border-radius);
 }
 .button--small {
   @include button-size($padding-small-vertical, $padding-small-horizontal, $font-size-small, $line-height-small, $btn-border-radius);

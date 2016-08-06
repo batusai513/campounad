@@ -12,22 +12,49 @@
   &-main{
     width: 100%;
     margin: 0 auto;
-    display: table;
-    table-layout: fixed;
     height: 100%;
-    padding: 0 10px;
-  }
-  &-side,
-  &-content{
-    display: table-cell;
-    vertical-align: top;
   }
   &-side{
     width: 260px;
     background-color: #454B57;
+    position: fixed;
+    z-index: 2;
+    height: 100%;
+    top: 0;
+    left: 0;
+    margin-left: -260px;
+    transition: all 0.2s ease-out;
+    &.is-active{
+      left: 260px;
+    }
   }
-  &-content{
-    padding-top: 40px;
+}
+
+@media #{$medium} {
+  .l{
+    &-content{
+      padding: 20px;
+    }
+  }
+}
+
+@media screen and (min-width: 950px) {
+  .l{
+    &-main{
+      width: 100%;
+      margin: 0 auto;
+      display: table;
+      table-layout: fixed;
+    }
+    &-side,
+    &-content{
+      display: table-cell;
+      vertical-align: top;
+    }
+    &-side{
+      position: static;
+      left: 260px;
+    }
   }
 }
 
@@ -37,7 +64,8 @@
         width: 1140px;
       }
       &-content{
-        padding-left: 40px;
+      padding: 40px 0 0 40px;
+
       }
     }
 }

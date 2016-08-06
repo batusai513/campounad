@@ -3,4 +3,15 @@
 	width: 100%;
 	padding: $half-spacing-unit 0;
   border-bottom: 1px solid #EAEAEA;
+  @media #{$small-max} {
+    &__img1{
+      width: 85px;
+    }
+    &__img2{
+      width: 100px;
+    }
+    &__img3{
+      width: 85px;
+    }
+  }
 }

@@ -48,12 +48,14 @@
 //objects, use them directly in the html
 @import "application/objects/nav";
 @import "application/objects/media";
+@import "application/objects/island";
 @import "application/objects/vertical-middle";
 
 //modules, the real css that you write everyday based on the design
 @import "application/modules/grid";
 @import "application/modules/panel";
 @import "application/modules/forms";
+@import "application/modules/hamburger-button";
 @import "application/modules/buttons-base";
 @import "application/modules/buttons";
 @import "application/modules/button-border";

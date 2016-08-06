@@ -38,6 +38,10 @@
   @extend %large--one-third;
 }
 
+.large--two-thirds{
+  @extend %large--two-thirds;
+}
+
 .small--one-quarter{
   @extend %small--one-quarter;
 }
