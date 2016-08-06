@@ -4,7 +4,7 @@
 	&__item{
     text-transform: uppercase;
     font-weight: 700;
-    color: #9A9BA0;
+    color: white;
     display: block;
     padding: em(15) em(15) em(15) em(40);
     transition: all 0.2s ease-out;
@@ -14,13 +14,13 @@
 		&.is-active,
     &:hover{
       color: white;
-      border-left: 4px solid #7C9C3E;
+      border-left: 4px solid white;
       &:before{
         transform: scaleX(1);
       }
 		}
     &:before{
-      background-color: #30353E;
+      background-color: #2C3E50;
       content: "";
       display: block;
       position: absolute;
@@ -34,4 +34,28 @@
       z-index: -1;
     }
 	}
+}
+
+.side-social{
+  padding: em(10) em(15) em(10) em(35);
+  color: white;
+  > a{
+    color: white;
+    transition: all 0.2s ease-out;
+    &:hover{
+      color: #2C3E50;
+    }
+  }
+}
+
+.social-box{
+  @include rem;
+  &__title{
+    font-size: em(12);
+    margin-bottom: $half-spacing-unit;
+  }
+  > a + a{
+    display: inline-block;
+    margin-left: em(2px);
+  }
 }
