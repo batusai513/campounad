@@ -11,9 +11,12 @@
     position: relative;
     backface-visibility: hidden;
     transform: translateZ(0);
+    &:hover,
+    &:focus{
+      color: white;
+    }
 		&.is-active,
     &:hover{
-      color: white;
       border-left: 4px solid white;
       &:before{
         transform: scaleX(1);
