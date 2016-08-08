@@ -23,3 +23,22 @@
     }
   }
 }
+
+.sembrando{
+  font-family: 'kaushan', sans-serif;
+  font-size: 18px;
+  @media #{$small} {
+    font-size: 30px;
+  }
+  span{
+    &:first-child{
+      color: #FDBE2C;
+    }
+    &:nth-child(2){
+      color: #1174BD;
+    }
+    &:last-child{
+      color: #FC1F31;
+    }
+  }
+}

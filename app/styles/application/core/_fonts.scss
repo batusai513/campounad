@@ -8,3 +8,14 @@
   font-weight: normal;
   font-style: normal;
 }
+
+@font-face {
+    font-family: 'kaushan';
+    src: url('../fonts/kaushan.eot');
+    src: url('../fonts/kaushan.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/kaushan.woff2') format('woff2'),
+         url('../fonts/kaushan.woff') format('woff'),
+         url('../fonts/kaushan.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
