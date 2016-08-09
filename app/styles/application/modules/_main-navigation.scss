@@ -37,6 +37,10 @@
       z-index: -1;
     }
 	}
+  &__rule{
+    margin-left: em(30);
+    margin-right: em(30);
+  }
 }
 
 .side-social{
